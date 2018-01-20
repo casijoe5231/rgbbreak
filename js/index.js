@@ -53,6 +53,7 @@ function gameStateManager(){
 		case "lose":
 		pause();
 		message("Game Over");
+		document.location.reload();
 		break;
 	}
 }
@@ -137,7 +138,7 @@ function hitTest(){
 */
 function drawBrick(){
 	var xoffset = 100;
-	var yoffset = 20;
+	var yoffset = 40;
 	var STARTING_VALUE = 5;
 	var x = STARTING_VALUE;
 	var y = 0;
